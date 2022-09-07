@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VRM お手軽ポーズ 1.0 (仮)</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="pose-editor-container">
+        <div id="ui">
+          <div>
+            <h3>VRMお手軽ポーズ 1.0 (コア機能テスト版)</h3>
+            <p>
+              VRMお手軽ポーズ1.0のコア機能である新ポーズ編集機能のデモ版です。
+            </p>
+            <p>
+              試行錯誤中なので大きく変更するかもしれません。また、一定期間後に非公開になります。
+            </p>
+          </div>
+          <div>UI テスト</div>
+          <div>
+            <button id="load-default-model">デフォルトモデル読み込み</button>
+          </div>
+          <div>
+            <input type="file" id="load-local-model" />
+          </div>
+          <div>
+            <button id="undo">undo</button>
+            <button id="redo">redo</button>
+          </div>
+          <div>
+            <div>Ui-visible</div>
+            <div>
+              <input
+                type="radio"
+                id="ui-visible-true"
+                value="true"
+                name="ui-visible"
+                checked
+              />
+              <label for="true">true</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="ui-visible-false"
+                name="ui-visible"
+                value="false"
+              />
+              <label for="false">false</label>
+            </div>
+          </div>
+        </div>
+        <div id="canvas-mounter"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

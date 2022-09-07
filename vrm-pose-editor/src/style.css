@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#ui {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  color: white;
+  pointer-events: none;
+}
+
+#ui button {
+  pointer-events: auto;
+}
+#ui input {
+  pointer-events: auto;
+}
+
+#pose-editor-container,
+#canvas-mounter {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
